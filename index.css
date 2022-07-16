@@ -170,6 +170,14 @@ header {
         margin-left: 0;
     }
 
+    .primary-navigation {
+        justify-content: start;
+    }
+
+   .on-mobile {
+        padding-top: 60px;
+   }
+
     .primary-nav {
         display: flex;
         gap: 2rem;
@@ -179,10 +187,12 @@ header {
         right: 0px;
         bottom: 0px;
         left: 10%;
+        /* padding-top: 50px; */
 
 
 
-        flex-direction: column;
+
+        flex-direction: column-reverse;
         /* padding: min(20vh, 5rem) 2em; */
         padding: 2em;
 
@@ -221,20 +231,36 @@ header {
     .flex {
         gap: 1.5rem;
     }
-
 }
 
 .hidden {
     display: none;
 }
 
+
 .show {
     display: block;
+}
+
+@media (min-width: 1000px) {
+    .show {
+        display: none;
+    }
 }
 
 .flex {
     display: flex;
     gap: var(--gap, 2.5rem);
+}
+
+.on-mobile {
+    display: flex;
+}
+
+@media (min-width:1000px) {
+    .on-mobile {
+     margin-left: auto;
+    }
 }
 
 /* end of nav toggle */
@@ -254,9 +280,15 @@ header {
     border: none;
     background: var(--clr-ash);
     outline: none;
-    width: 230px;
+    max-width: 230px;
     padding: 5px 3px;
 
+}
+
+@media (max-width:800px) {
+    .search-input {
+        max-width: 120px;
+    }
 }
 
 .search-bar {
@@ -470,6 +502,19 @@ header {
     text-decoration: line-through;
 }
 
+.centered {
+    display: grid;
+}
+
+.value-core {
+    justify-self: center;
+    max-width: 1200px
+}
+
+.values-heading {
+    margin: 50px 20px;
+}
+
 .values-conc {
     display: flex;
     margin: 50px 20px 100px 20px;
@@ -477,6 +522,14 @@ header {
     margin-bottom: 70px;
     padding-bottom: 30px;
     overflow: scroll;
+}
+
+@media (min-width: 1000px) {
+.values-conc {
+    overflow: hidden;
+    /* justify-content: center; */
+}
+
 }
 
 .values {
