@@ -1,0 +1,62 @@
+.hero {
+    background-image: url(../assets/home-page/cooking-bg-1.jpg);
+}
+
+.cooking-conc {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cooking {
+    max-width: 1000px;
+}
+
+.cook-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.recipes {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.3));
+    max-height: 180px;
+}
+
+@media (min-width: 700px) {
+    .recipie-conc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .recipes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.recipes img {
+    height: 150px;
+}
+
+.text-conc {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-conc a {
+    color: inherit;
+}
+
+.text-conc a:hover {
+    color: var(--clr-header);
+}

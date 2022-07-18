@@ -1,0 +1,42 @@
+.hero {
+    background-image: url(../assets/home-page/about-bg.jpg);
+}
+
+.about-conc {
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+}
+
+.about {
+    max-width: 1000px;
+}
+
+.about-bold {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-bold h2 {
+    font-size: var(--fs-500);
+    font-weight: 700;
+}
+
+.about-p {
+    line-height: 1.7;
+}
+
+.about-p p {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 800px) {
+    .about {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .about-bold {
+        align-self: center;
+    }
+}
