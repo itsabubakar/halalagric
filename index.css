@@ -400,13 +400,25 @@ header {
 .categories img{
     border-radius: 50%;
     height: 150px;
+    padding-bottom: 12px;
+
 }
 
-.category-text h3 {
+.category-text {
+    margin-top: 12px;
+}
+
+.category-text a {
     text-transform: capitalize;
     font-size: var(--fs-400);
     font-weight: 700;
-    margin-top: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-text a:hover {
+    opacity: .5;
+    text-decoration: underline;
 }
 
 @media (max-width:600px) {
@@ -535,7 +547,16 @@ header {
     max-width: 1200px;
 }
 
+.value-heading-conc {
+    display: grid;
+    margin: 0 20px;
+    /* justify-content: center; */
+}
+
 .values-heading {
+    max-width: 1100px;
+    width: 100%;
+    justify-self: center;
     margin: 50px 20px 0px 20px;
 }
 
@@ -599,6 +620,7 @@ header {
     display: grid;
     grid-template-columns: 190px 407px 230px;
     max-width: 1100px;
+    grid-column: 30px;
     justify-content: space-between;
 }
 
