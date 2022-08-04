@@ -1,332 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halal Agric Farms</title>
-    <link rel="stylesheet" href="index.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalalAgric Farms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-            <div class="logo"><h2>HalalAgric Farms</h2></div>
-            <div
-          class="mobile-nav-toggle open"
-          aria-controls="primary-nav"
-          aria-expanded="false"
-        ><img src="./assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
 
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h2>HalalAgric Farms</h2></div>
         <div
-          class="mobile-nav-toggle close"
-        ><img src="./assets/icons/icons8-close-24.png" alt="" srcset=""></div>
-            <nav class="nav">
-                <ul class="nav-list primary-navigation primary-nav flex"
-                id="primary-nav"
-                data-visible="false">
-                    <li class="nav-link"><a href="" class="active-link">shop</a></li>
-                    <li class="nav-link"><a href= "./pages/about.html">about</a></li>
-                    <li class="nav-link"><a href= "./pages/cooking.html">cooking</a></li>
-                    <!-- <div class="on-mobile">
-                      <li class="search-bar">
-                        <input type="text" placeholder="Search livestock, vegetables, meat..." class="search-input">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    </li>
-                    <li class="nav-icons"><span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span></li>
-                    <li class="nav-icons"><span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span></li>
-                    </div> -->
-                    
-                </ul>
-            </nav>
-        </header>
+      class="mobile-nav-toggle open"
+      aria-controls="primary-nav"
+      aria-expanded="false"
+    ><img src="./assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
 
-      <section class="hero">
+    <div
+      class="mobile-nav-toggle close"
+    ><img src="./assets/icons/icons8-close-24.png" alt="" srcset=""></div>
+        <nav class="nav">
+            <ul class="nav-list primary-navigation primary-nav flex"
+            id="primary-nav"
+            data-visible="false">
+                <li class="nav-link"><a href="./index.html" class="active-link">home</a></li>
+                <li class="nav-link"><a href="./pages/products.html" class="">Products</a></li>
+                <li class="nav-link"><a href= "./pages/about.html">about</a></li>
+                <li class="nav-link"><a href= "./pages/cooking.html">cooking</a></li>
+                <li class="cart nav-link"><a href="./pages/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                <!-- <div class="on-mobile">
+                  <li class="search-bar">
+                    <input type="text" placeholder="Search livestock, vegetables, meat..." class="search-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </li>
+                <li class="nav-icons"><span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span></li>
+                <li class="nav-icons"><span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span></li>
+                </div> -->
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
         <div class="hero-text">
           <h2>your best source for healthy organic foods</h2>
+          <button class="explore-btn">Explore&#8594;</button>
         </div>
       </section>
 
-      <section class="category-conc">
-        <div class="category-heading">
-          <h2>Shop by Category</h2>
-        </div>
-        <div class="category">
-          <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/vegs-2.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/vegs.html">vegetables</a></div>
-          </div>
 
-          <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/beef.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/livestock.html">livestock</a></div>
-          </div>
+    <!-- Eid Special products -->
 
-          <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/fruits.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/fruits.html">fruits</a></div>
-          </div>
-
-          <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/herbs.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/herbs.html">herbs</a></div>
-          </div>
-
-          <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/apiary.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/apiary.html">apiary</a></div>
-          </div>
-
-          
-           <div class="categories">
-            <div class="category-img">
-              <img src="./assets/home-page/staple-food.jpg" alt="" srcset="" />
-            </div>
-            <div class="category-text"><a href="./pages/staple-food.html">staple food</a></div>
-          </div>
-          
-        </div>
-      </section>
-
-      <section class="product-section-conc">
-        <div class="product-heading">
-          <h2>eid ram sales</h2>
-          <p>Our rams are healthy and fit for sacrificial slaugter</p>
-        </div>
-
-        <div class="products">
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-1.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Rigged-Titan Ram</div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-2.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Angus-Titan Ram</div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-5.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Butter-Titan Ram</div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-6.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Wall Flower</div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-9.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Halal-fae</div>
-                <div class="product-rating">
-                  
+    <div class="small-container">
+        <h2 class="title">Eid Special Sales</h2>
+        <div class="product-conc">
+          <div class="row">
+            <div class="col-4 ram">
+                <img src="./assets/rams/ram-1.jpg" alt="" srcset="">
+                <h4>Rigged-Titan Ram</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
                 </div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
+                <p>₦50000</p>
             </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img src="./assets/rams/ram-1.jpg" alt="" srcset="" />
-              <button class="order"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus order-icon"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></button>
-            </div>
-            <div class="product-text">
-              <div class="product-source">HalalAgric Farms</div>
-              <div class="product-info">
-                <div class="product-name">Longman</div>
-              </div>
-              <div class="product-price">
-                <span class="discount-price">₦87,940</span>
-                <span class="selling-price">₦74,620</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="value-heading-conc">
-        <div class="values-heading">
-        <h2>our core values</h2>
-      </div>
-      </div>
-      
-
-      <div class="centered">
-        <section class="value-core">
-        <!-- <div class="values-heading">
-          <h2>our core values</h2>
-        </div> -->
-          <div class="values-conc">
-                  <div class="values">
-                    
-
-                    <div class="core-values">
-                      <div class="core-value">
-                        <div class="core-value-img">
-                          <img src="./assets/home-page/halal-img.png" alt="" />
-                        </div>
-                        <div class="core-value-text">
-                          <h3>100% Halal</h3>
-                          <p>
-                            HalalAgric Farms product are grown using 100% halal methods.
-                            Our products are also organic and all natural.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="core-value">
-                        <div class="core-value-img">
-                          <img src="./assets/home-page/modern.jpg" alt="" />
-                        </div>
-                        <div class="core-value-text">
-                          <h3>Sustainable</h3>
-                          <p>
-                            HalalAgric focuses on producing long-term crops and livestock having minimal effects on the environment. We have a good balance between the need for food production and the preservation of the ecological system within the environment.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="core-value">
-                        <div class="core-value-img">
-                          <img src="./assets/home-page/healthy.jpg" alt="" />
-                        </div>
-                        <div class="core-value-text">
-                          <h3>Healthy</h3>
-                          <p>
-                            HalalAgric produces include fruits, vegetables, whole grains and low-fat dairy which can help to reduce your risk of heart disease by maintaining blood pressure and cholesterol levels.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="core-value">
-                        <div class="core-value-img">
-                          <img src="./assets/home-page/beef-bone.jpg" alt="" />
-                        </div>
-                        <div class="core-value-text">
-                          <h3>Delicious</h3>
-                          <p>
-                            At HalalAgric. we handpick and every product we sell, from 100% Grass Fed Rams to  green house grown vegetables. Enjoy delicious, high-quality farm produce.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="col-4 ram">
+                <img src="./assets/rams/ram-6.jpg" alt="" srcset="">
+                <h4>Roman-Titan Ram</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
                 </div>
-      </section>
-      </div>
-
-      
-
-      
-
-      <footer class="footer">
-        <div class="footer-items">
-          <div class="footer-items-top">
-            <div class="footer-logo">
-              <h2>HalalAgric Farms</h2>
+                <p>₦50000</p>
             </div>
-            <div class="footer-links">
-              <div class="footer-link">
-                <h3>Shop</h3>
-                <ul>
-                  <li><a href="">vegetables</a></li>
-                  <li><a href="">livestock</a></li><li><a href="">fruits</a></li><li><a href="">herbs</a></li><li><a href="">apiary</a></li><li><a href="">staple food</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-link">
-                <h3>Discover</h3>
-                <ul>
-                  <li>blog</li>
-                  <li>recipies</li>
-                  <li>farms</li>
-                  <li>FAQ</li>
-                </ul>
-              </div>
+            <div class="col-4 ram">
+                <img src="./assets/rams/ram-2.jpg" alt="" srcset="">
+                <h4>Grey-Skull Ram</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦50000</p>
             </div>
-            <div class="footer-newsletter">
-              <input
-                type="text"
-                placeholder="Enter Your Email"
-                class="footer-input"
-              />
-              <button class="submit-email">Get Deals and Updates</button>
+            <div class="col-4 ram">
+                <img src="./assets/rams/ram-5.jpg" alt="" srcset="">
+                <h4>TrueHorn Ram</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦50000</p>
             </div>
-          </div>
-          <div class="footer-items-bottom">
-            <p class="support"></p>
-            <p class="legal-info"></p>
-          </div>
         </div>
-      </footer>
+        <a href="./pages/products.html" class="view-all">view all</a>  
+        </div>
+        
+
+        <h2 class="title">latest products</h2>
+        <div class="product-conc">
+           <div class="row product-row">
+            <div class="col-5 products">
+                <img src="./assets/products/fruits/apple.jpg" alt="" srcset="">
+                <h4>HalalAgric Apple</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/vegs/cabbage.jpg" alt="" srcset="">
+                <h4>HalalAgric Cabbage</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/fruits/avocado.jpg" alt="" srcset="">
+                <h4>HalalAgric Avocado</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/fruits/fig.jpeg" alt="" srcset="">
+                <h4>HalalAgric Fig</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/apiary/honey.jpg" alt="" srcset="">
+                <h4>HalalAgric Pure Honey</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+        </div>
+        <div class="row product-row">
+            <div class="col-5 products">
+                <img src="./assets/products/herbs/artemisia.jpg" alt="" srcset="">
+                <h4>HalalAgric Artemisia</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/herbs/Balm-lemon-balm.webp" alt="" srcset="">
+                <h4>HalalAgric Lemon Balm</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/herbs/garlic-.jpg" alt="" srcset="">
+                <h4>HalalAgric Garlic</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/herbs/origano.jpg" alt="" srcset="">
+                <h4>HalalAgric Origano</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+            <div class="col-5 products">
+                <img src="./assets/products/herbs/parsley.jpg" alt="" srcset="">
+                <h4>HalalAgric Parsley</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fas fas fa-star-half-alt"></i>
+                    <i class="fa far fa-star"></i>
+                </div>
+                <p>₦1,230</p>
+            </div>
+        </div> 
+        <a href="./pages/products.html" class="view-all">view all</a>          
+        </div>
+        
+
     </div>
-  </body>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <div class="footer-newsletter">
+                        <input
+                          type="text"
+                          placeholder="Enter Your Email"
+                          class="footer-input"
+                        />
+                        <button class="submit-email">Get Deals and Updates</button>
+                      </div>
+                </div>
+                <div class="footer-col-2">
+                    <h2>HalalAgric Farms</h2>
+                    <p>100% Healthy, 100% Organic</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="">vegetables</a></li>
+                        <li><a href="">livestock</a></li><li><a href="">fruits</a></li><li><a href="">herbs</a></li><li><a href="">apiary</a></li><li><a href="">staple food</a></li>
+                      </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">recipies</a></li>
+                        <li><a href="">farms</a></li>
+                        <li><a href="">FAQ</a></li>
+                      </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">Copyright 2022 - HalalAgric</div>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../assets/home-page/cooking-bg-1.jpg);
+    background-image: url(../assets/backgrounds/cooking-bg-1.jpg);
 }
 
 .cooking-conc {
@@ -44,6 +44,7 @@
 
 .recipes img {
     height: 150px;
+    width: 200px;
 }
 
 .text-conc {
